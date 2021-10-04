@@ -14,10 +14,17 @@
   "author": "Ganesh Shingre",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.22.0",
+    "connect-mongo": "^4.6.0",
+    "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.1",
-    "nodemon": "^2.0.13"
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.0.8",
+    "nodemon": "^2.0.13",
+    "noty": "^3.2.0-beta-deprecated"
   },
   "devDependencies": {
     "laravel-mix": "^6.0.31",
