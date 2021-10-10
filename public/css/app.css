@@ -348,3 +348,7 @@ section.login a:hover {
   -webkit-text-decoration: black !important;
           text-decoration: black !important;
 }
+
+a.link {
+  color: #00ff73;
+}
