@@ -7,12 +7,7 @@ function homeController() {
             const arts= await Item.find()
             //console.log(arts)
             return res.render('home',{arts:arts})
-        //}
-        //  index (req, res){
-        //     Item.find().then(function(arts){
-        //         console.log(arts)
-        //         return res.render('home', {arts:arts})
-        //     })
+        
             
 
          }

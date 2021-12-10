@@ -1,15 +1,80 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<section>
+    <div class="update_db flex justify-center"><button class="update_btn  "   type="submit" id="Update">Add Artwork</button></div>
+    <!-- style="position:relative; left: 50%;  class chya bajua var^" -->
+    <div id="adminUpdate" style="display:none; position:relative; left: 20%">
+        <section>
+
+            <div>
+                <!-- to upload a file in database -->
+                <form action="/adminUpdategetData" method="post">
+                    <div>
+                        <input type="file" class="inpbox" name="adminFile" id="adminFile">
+                    </div>
+
+
+                    <div>
+                        <label for="Name of the product"></label>
+                        <input type="text" class="inpbox" name="adminName" id="adminName" placeholder="Name">
+                    </div>
+
+
+                    <div>
+                        <label for="price of the product"></label>
+                        <input type="text" class="inpbox" name="adminPrice" id="adminPrice" placeholder="Price">
+                    </div>
+
+                    <div>
+                        <label for="code of the product"></label>
+                        <input type="text" class="inpbox" name="adminCode" id="adminCode" placeholder="Code">
+                    </div>
+
+                    <div>
+                        <label for="description of the product"></label>
+                        <input type="text" class="inpbox" name="adminDescription" id="adminDescription" placeholder="Description">
+                    </div>
+
+                    <div>
+                        <button class="update_btn" type="submit" id="adminDataSubmit">Add to Store</button>
+                    </div>
+                </form>
+            </div>
+
+
+
+
+        </section>
+    </div>
+
+
+     <script>
+        document.getElementById('Update').addEventListener('click', () => {
+            document.getElementById('adminUpdate').style.display = 'flex';
+        // setTimeout(function () {
+        //        document.getElementById('adminUpdate').style.display = 'none';
+        //    }, 2000);
+        })
+    </script>              
+
+</section>
+
+
 <section class="orders light-section px-14">
     <div class="container mx-auto pt-12">
         <h1 class="font-bold text-lg mb-4">All orders</h1>
         <table class="w-full table-auto bg-white">
             <thead>
                 <tr>
-                    <th class="px-4 py-2 text-left">Orders</th>
-                    <th class="px-4 py-2 text-left">Customer</th>
-                    <th class="px-4 py-2 text-left">Address</th>
-                    <th class="px-4 py-2 text-left">status</th>
-                    <th class="px-4 py-2 text-left">Placed at</th>
-                    <th class="px-4 py-2 text-left">Payment Status</th>
+                    <th class="px-4 py-2 text-left tbtop">Orders</th>
+                    <th class="px-4 py-2 text-left tbtop">Customer</th>
+                    <th class="px-4 py-2 text-left tbtop">Address</th>
+                    <th class="px-4 py-2 text-left tbtop">Status</th>
+                    <th class="px-4 py-2 text-left tbtop">Placed at</th>
+                    <th class="px-4 py-2 text-left tbtop">Payment Status</th>
                 </tr>
             </thead>
             <tbody id="orderTableBody">

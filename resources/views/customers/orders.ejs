@@ -13,10 +13,10 @@
         <table class="w-full table-auto bg-white">
             <thead>
                 <tr>
-                    <th class="px-4 py-2 text-left">Orders </th>
-                    <th class="px-4 py-2 text-left">Phone </th>
-                    <th class="px-4 py-2 text-left">Address </th>
-                    <th class="px-4 py-2 text-left">Time </th>
+                    <th class="px-4 py-2 text-left tbtop">Orders </th>
+                    <th class="px-4 py-2 text-left tbtop">Phone </th>
+                    <th class="px-4 py-2 text-left tbtop">Address </th>
+                    <th class="px-4 py-2 text-left tbtop">Time </th>
                 </tr>
             </thead>
             <tbody>
@@ -24,7 +24,7 @@
                     <% orders.forEach((order) => { %>
                         <tr>
                             <td class="border px-4 py-2">
-                                <a class="link" href="/"><%= order._id %></a>
+                                <a class="link" href="/customer/orders/<%= order._id %>"><%= order._id %></a>
         
                             </td>
                             <td class="border px-4 py-2">

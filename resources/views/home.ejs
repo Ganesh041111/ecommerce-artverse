@@ -2,36 +2,50 @@
     <section class="hero py-10">
         <div class="container mx-auto px-10 flex justify-center items-center justify-between">
             <div class="w-1/2">
-                <h6 class="text-lg"><em>Are you hungry?</em></h6>
-                <h1 class="text-6xl font-bold">Don't wait</h1>
-                <button class="px-6 py-2 rounded-full text-white font-bold mt-4 btn-primary">Order Now</button>
+                <h4 class="text-lg"><em><div class="text-9xl font-bold title" >ART</div> <br>is something that makes you breathe <br> with a different kind of happiness.</em></h4><br>
+                <h2 class="text-6xl font-bold">Art speaks where words are unable to explain!</h2><br>
+                <button class="px-6 py-2 rounded-full text-white font-bold mt-4 btn-primary">Explore</button>
             </div>
             <div class="w-1/2">
                 <!-- <img src="https://i.pinimg.com/originals/79/a3/84/79a384c3c449ad01b0e57e790807b2c0.gif"  alt=""> -->
                 <!-- <img src="/img/hero-pizza.png"> -->
-                <img src="/img/Mural artist.gif">
+                <img src="/img/homeart1.gif">
             </div>
         </div>
 
     </section >
     
 
-    <section class="menu container mx-auto px-10 py-8">
+    <section class="menu container mx-auto px-1 py-8 ">
         <h1 class="text-xl font-bold mb-8">All Artworks</h1>
-        <div class="grid grid-cols-4 gap-x-12 gap-y-16">
+
+        
+
+        <div class="searchitem flex items-center">
+            <input type="text" class="py-1 px-6" name="searchPizza"  id="search">
+            <a href="/searchPage" class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold" id="searchBtn">Search</a>
+        </div>
+        
 
 
 
+        <div class="grid grid-cols-3 gap-x-4 gap-y-16 flex items-center">
 
+
+
+        <%=  %>
 
             <% arts.forEach(function(art) { %>
-            <div class="w-64">
-                <img class="h-40 mb-4 mx-auto" src="/img/<%= art.image %>" alt="">
+            <div class="card w-134" data-hover="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aLorem ipsum dolor sit amet consectetur adipisicing elit. Sit, a.">
+                <img class="data-zoomable zoom h-40 mb-1 mx-auto" src="/img/<%= art.image %>" alt="">
                 <div class="text-center">
-                    <h2 class="mb-4 text-lg"><%= art.name %></h2>
-                    <span class=" size py-1 px-4 rounded-full uppercase text-xs"><%= art.size %></span>
-                    <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg ">₹<%= art.price %></span>
+                    <h2 class="mb-1 text-lg font-bold"><%= art.name %></h2>
+                    <h6 class="description" style="height: 70px;"><%= art.description %></h6>
+                    
+                    <div class="flex items-center justify-around mt-2">
+                        <span class=" code py-1 px-4 rounded-full uppercase text-xs"><%= art.code %></span>
+                        <span class="font-bold text-lg ">Price  ₹<%= art.price %></span>
+                        
                         <button data-art="<%= JSON.stringify(art) %>" class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
                             <span>+</span>
                             <span class="ml-4">Add to Cart</span>

@@ -3,63 +3,134 @@
       "$oid": "5eee651f739f8c674fd736ee"
     },
     "name": "Mandala art",
-    "image": "mandala1.jpg",
-    "price": "850",
-    "size": "small"
+    "image": "mand_1.jpg",
+    "price": "490",
+    "code": "MAN01",
+    "description": "Lorem ipsum dolor sit amet. Ut nulla ipsam qui accusantium maiores sed corrupti molestiae."
   },{
     "_id": {
       "$oid": "5eee6671a27a66807cf2bea3"
     },
     "name": "Painting",
-    "image": "painting1.jpg",
-    "price": "600",
-    "size": "medium"
+    "image": "paint_1.jpg",
+    "price": "400",
+    "code": "PAI01",
+    "description": "Lorem ipsum dolor sit amet. Ut nulla ipsam qui accusantium maiores sed corrupti molestiae."
   },{
     "_id": {
       "$oid": "5eee6692a27a66807cf2bea4"
     },
     "name": "Paper art",
-    "image": "paperart1.jpg",
-    "price": "400",
-    "size": "small"
+    "image": "paper_1.jpg",
+    "price": "600",
+    "code": "PAP01",
+    "description": "Lorem ipsum dolor sit amet. Ut nulla ipsam qui accusantium maiores sed corrupti molestiae."
   },{
     "_id": {
       "$oid": "5eee66a5a27a66807cf2bea5"
     },
-    "name": "Americana",
-    "image": "pizza.png",
-    "price": "500",
-    "size": "large"
+    "name": "paper art",
+    "image": "paper_2.jpg",
+    "price": "900",
+    "code": "PAP02",
+    "description": "Lorem ipsum dolor sit amet. Ut nulla ipsam qui accusantium maiores sed corrupti molestiae."
   },{
     "_id": {
       "$oid": "5eee66c4a27a66807cf2bea6"
     },
-    "name": "Chicken Mushroom",
-    "image": "pizza.png",
-    "price": "350",
-    "size": "medium"
+    "name": "Mandala art",
+    "image": "mand_2.jpg",
+    "price": "550",
+    "code": "MAN02",
+    "description": "Lorem ipsum dolor sit amet. Ut nulla ipsam qui accusantium maiores sed corrupti molestiae."
   },{
     "_id": {
       "$oid": "5eee66cfa27a66807cf2bea7"
     },
-    "name": "Paneer pizza",
-    "image": "pizza.png",
-    "price": "200",
-    "size": "small"
+    "name": "Mini Sculpture",
+    "image": "minisculp_1.jpg",
+    "price": "500",
+    "code": "MSP01",
+    "description": "Lorem ipsum dolor sit amet. Ut nulla ipsam qui accusantium maiores sed corrupti molestiae."
   },{
     "_id": {
       "$oid": "5eee66eea27a66807cf2bea8"
     },
-    "name": "Paper Art",
-    "image": "paperart2.jpg",
-    "price": "600",
-    "size": "large"
+    "name": "Mini Sculpture",
+    "image": "minisculp_2.jpg",
+    "price": "500",
+    "code": "MSP02",
+    "description": "Lorem ipsum dolor sit amet. Ut nulla ipsam qui accusantium maiores sed corrupti molestiae."
   },{
     "_id": {
       "$oid": "5eee6717a27a66807cf2bea9"
     },
-    "name": "Mandala Art",
-    "image": "mandala2.jpg",
-    "price": "1500",
-    "size": "medium"
+    "name": "Painting",
+    "image": "paint_2.jpg",
+    "price": "900",
+    "code": "PAI02",
+    "description": "Lorem ipsum dolor sit amet. Ut nulla ipsam qui accusantium maiores sed corrupti molestiae."
+  },{
+    "_id": {
+      "$oid": "5eee651f739f8c674fd11111"
+    },
+    "name": "Dot Mandala",
+    "image": "dotmand_1.jpg",
+    "price": "850",
+    "code": "DMN01",
+    "description": "Lorem ipsum dolor sit amet. Ut nulla ipsam qui accusantium maiores sed corrupti molestiae."
+  },{
+    "_id": {
+      "$oid": "5eee651f739f8c674fd22222"
+    },
+    "name": "Painting",
+    "image": "paint_3.jpg",
+    "price": "1000",
+    "code": "PAI03",
+    "description": "Lorem ipsum dolor sit amet. Ut nulla ipsam qui accusantium maiores sed corrupti molestiae."
+  },{
+    "_id": {
+      "$oid": "5eee651f739f8c674fd33333"
+    },
+    "name": "Dot Mandala",
+    "image": "dotmand_2.jpg",
+    "price": "550",
+    "code": "DMN02",
+    "description": "Lorem ipsum dolor sit amet. Ut nulla ipsam qui accusantium maiores sed corrupti molestiae."
+  },{
+    "_id": {
+      "$oid": "5eee651f739f8c674fd44444"
+    },
+    "name": "Mandala art",
+    "image": "mand_4.jpg",
+    "price": "750",
+    "code": "MAN04",
+    "description": "Lorem ipsum dolor sit amet. Ut nulla ipsam qui accusantium maiores sed corrupti molestiae."
+  },{
+    "_id": {
+      "$oid": "5eee651f739f8c674fd55555"
+    },
+    "name": "Painting",
+    "image": "paint_4.jpg",
+    "price": "1200",
+    "code": "PAI04",
+    "description": "Lorem ipsum dolor sit amet. Ut nulla ipsam qui accusantium maiores sed corrupti molestiae."
+  },{
+    "_id": {
+      "$oid": "5eee651f739f8c674fd66666"
+    },
+    "name": "Mini Sculpture",
+    "image": "minisculp_3.jpg",
+    "price": "400",
+    "code": "MSP03",
+    "description": "Lorem ipsum dolor sit amet. Ut nulla ipsam qui accusantium maiores sed corrupti molestiae."
+  },{
+    "_id": {
+      "$oid": "5eee651f739f8c674fd77777"
+    },
+    "name": "Mandala art",
+    "image": "mand_3.jpg",
+    "price": "550",
+    "code": "MAN03",
+    "description": "Lorem ipsum dolor sit amet. Ut nulla ipsam qui accusantium maiores sed corrupti molestiae."
   }]

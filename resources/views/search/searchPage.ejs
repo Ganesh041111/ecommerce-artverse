@@ -1,0 +1,56 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> -->
+
+<body>
+
+
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 col-gap-12 row-gap-16 flex items-center" style="background: rgb(226, 226, 226);
+    min-height: calc(100vh - 86px);">
+        <% dataList.forEach(data=> { %>
+            <div class="card w-full md:w-64">
+                <img class="zoom h-40 mb-1 mx-auto" src="/img/<%= data.image %>" alt="">
+                <div class="text-center">
+                    <h2 class="mb-2 text-lg">
+                        <%= data.name %>
+                    </h2>
+                    <h6 class="description" style="height: 70px;"><%= data.description %></h6>
+                    
+                    <div class="flex items-center justify-around mt-2">
+                        <span class="code py-1 px-4 rounded-full uppercase text-xs">
+                            <%= data.code %>
+                        </span>
+                        <span class="font-bold text-lg">₹<%= data.price %></span>
+                        
+                        <button data-art="<%= JSON.stringify(data) %>" class="add-to-cart py-1 px-6 rounded-full flex items-center font-bold">
+                            <span>+</span>
+                            <span class="ml-4">Add to Cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+
+    </div>
+    
+    <!-- <script>
+        let searchAddToCart = document.querySelectorAll('add-to-cart')
+
+        searchAddToCart.forEach((btn) => {
+            btn.addEventListener('click', ()=>{
+                //let p = btn.dataset.data
+                //console.log(p)
+            })
+        })
+    </script> -->
+
+</body>
+<!-- 
+</html> -->

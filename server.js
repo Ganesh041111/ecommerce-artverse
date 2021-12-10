@@ -10,18 +10,8 @@ const session = require('express-session')
 const MongoDbStore = require('connect-mongo')
 const flash = require('express-flash')
 const passport = require('passport')
+const Emitter = require('events')
 
-
-
-// Database connection
-// const url = 'mongodb://localhost/store';
-// mongoose.connect(url, { useNewUrlParser: true, useCreateIndex:true, useUnifiedTopology: true, useFindAndModify : true });
-// const connection = mongoose.connection;
-// connection.once('open', () => {
-//     console.log('Database connected...');
-// }).catch(err => {
-//     console.log('Connection failed...')
-// });
 
 mongoose.connect(process.env.MONGO_CONNECTION_URL, {
   useNewUrlParser: "true",
@@ -34,28 +24,6 @@ const connection = mongoose.connection.on("connected", (err, res) => {
 })
 
 //--//
-
-
-// Or:
-
-// mongoose.connect('mongodb://localhost:27017/store');
-// try {
-//   await mongoose.connect('mongodb://localhost:27017/store');
-// } catch (error) {
-//   handleError(error);
-// }
-
-// mongoose.connection.on('error', err => {
-//     logError(err);
-//   });
-//--//
-
-// Session store
-// let mongoStore = new MongoDbStore({
-//   mongooseConnection: connection,
-//   collection: 'sessions'
-// })
-
 
 
 
@@ -106,6 +74,7 @@ require('./routes/web')(app)
 
 
 
-app.listen(PORT , () =>{
+const server = app.listen(PORT , () =>{
     console.log(`Listening on port ${PORT}`)
 })
+

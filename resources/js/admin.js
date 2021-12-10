@@ -1,5 +1,7 @@
 import axios from 'axios'
 import Noty from 'noty'
+import moment from 'moment'
+//import { Socket } from 'socket.io'
 export function initAdmin() {
     const orderTableBody = document.querySelector('#orderTableBody')
     let orders = []
@@ -21,7 +23,7 @@ export function initAdmin() {
         let parsedItems = Object.values(items)
         return parsedItems.map((menuItem) => {
             return `
-                <p>${ menuItem.item.name } - ${ menuItem.qty } pcs </p>
+                <p>${ menuItem.item.name } - ${ menuItem.qty } pcs - ${ menuItem.item.code }</p>
             `
         }).join('')
       }
@@ -71,7 +73,7 @@ export function initAdmin() {
                     </div>
                 </td>
                 <td class="border px-4 py-2">
-                    ${ order.createdAt }
+                    ${ moment(order.createdAt).format('HH:mm A ---- DD-MM-YYYY ') }
                 </td>
                 <td class="border px-4 py-2">
                     ${ order.paymentStatus ? 'paid' : 'Not paid' }
@@ -80,6 +82,9 @@ export function initAdmin() {
         `
         }).join('')
     }
+
+
+
     
 
 }
